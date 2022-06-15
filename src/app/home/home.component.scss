@@ -1,0 +1,54 @@
+.app-home {
+    .bg-panel {
+        .left-pole {
+            position: fixed;
+            left: 0;
+            top: 98px;
+            bottom: 0;
+            width: 40px;
+            background-image: url("../../assets/images/bg-images/middle-container/left-pole-with-lights.png"); // image-set( url("../../assets/images/bg-images/middle-container/left-pole.png") 1x, url("../../assets/images/bg-images/middle-container/left-pole@2x.png") 2x, url("../../assets/images/bg-images/middle-container/left-pole@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+        .top-left {
+            position: fixed;
+            top: 103px;
+            left: 44px;
+            width: calc((100% - 265px) / 2);
+            height: 30px;
+            background-image: url("../../assets/images/bg-images/middle-container/header-bottom-light.png");
+            background-repeat: no-repeat;
+            background-position: top 0 left 0;
+            z-index: -1;
+        }
+        .right-pole {
+            position: fixed;
+            right: 0;
+            top: 98px;
+            bottom: 0;
+            width: 40px;
+            background-image: url("../../assets/images/bg-images/middle-container/right-pole-with-lights.png"); // image-set( url("../../assets/images/bg-images/middle-container/right-pole.png") 1x, url("../../assets/images/bg-images/middle-container/right-pole@2x.png") 2x, url("../../assets/images/bg-images/middle-container/right-pole@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: -1;
+        }
+        .top-right {
+            position: fixed;
+            top: 103px;
+            right: 44px;
+            width: calc((100% - 265px) / 2);
+            height: 30px;
+            background-image: url("../../assets/images/bg-images/middle-container/header-bottom-light.png");
+            background-repeat: no-repeat;
+            background-position: top 0 right 0;
+            z-index: -1;
+        }
+    }
+    padding: 116px 50px 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,47 @@
+.app-no-slot {
+    margin-left: 70px;
+    margin-top: 6px;
+    position: fixed;
+    bottom: 20px;
+    .slot-container {
+        width: 621px;
+        height: 106px;
+        background-image: image-set( url("../../assets/images/bg-images/middle-container/number-slot.png") 1x, url("../../assets/images/bg-images/middle-container/number-slot@2x.png") 2x, url("../../assets/images/bg-images/middle-container/number-slot@3x.png") 3x);
+        background-repeat: no-repeat;
+        padding: 15px 20px;
+        .slot {
+            height: 72px;
+            width: 90px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:last-child {
+                width: 130px;
+                vertical-align: top;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .no {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                $no: 25;
+                @for $i from 1 through $no {
+                    &#{$i} {
+                        background-image: url(../../assets/images/bg-images/slot-numbers/#{$i}.svg);
+                        background-repeat: no-repeat;
+                        width: 70px;
+                        height: 56px;
+                    }
+                }
+            }
+            .normal {
+                width: 108px;
+                height: 28px;
+                background-repeat: no-repeat;
+                background-image: image-set( url('../../assets/images/bg-images/slot-numbers/normal.png') 1x, url('../../assets/images/bg-images/slot-numbers/normal@2x.png') 2x, url('../../assets/images/bg-images/slot-numbers/normal@3x.png') 3x)
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.bingo-container {
+    .bg-curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #025122;
+        object-fit: cover;
+        background-image: image-set(url("../assets/images/bg-images/bg-green-curtain.png") 1x, url("../assets/images/bg-images/bg-green-curtain@2x.png") 2x, url("../assets/images/bg-images/bg-green-curtain@3x.png") 3x);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header-bottom-bg {
+        &-spark {
+            position: fixed;
+            top: -2px;
+            left: 50%;
+            transform: translateX(calc(-50% + 164px));
+            width: 652px;
+            height: 128px;
+            object-fit: contain;
+            background-image: image-set( url("../assets/images/bg-images/header/sparktwinkles.png") 1x, url("../assets/images/bg-images/header/sparktwinkles@2x.png") 2x, url("../assets/images/bg-images/header/sparktwinkles@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: 652px 128px;
+            z-index: 10;
+        }
+        &-center-spark {
+            position: fixed;
+            top: -128px;
+            left: 50%;
+            transform: translateX(calc(-50%));
+            width: 815px;
+            height: 458px;
+            object-fit: contain;
+            background-image: image-set( url("../assets/images/bg-images/header/header-bg-bottom-center-spark.png") 1x, url("../assets/images/bg-images/header/header-bg-bottom-center-spark@2x.png") 2x, url("../assets/images/bg-images/header/header-bg-bottom-center-spark@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: 815px 458px;
+            z-index: 0;
+        }
+    }
+    display: flex;
+}

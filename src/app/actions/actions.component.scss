@@ -1,0 +1,63 @@
+.app-actions {
+    position: fixed;
+    bottom: 60px;
+    right: 73.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .button-container {
+        div {
+            display: flex;
+            width: 100%;
+        }
+        a.actions {
+            display: inline-flex;
+            text-indent: -9999px;
+            position: relative;
+            border-radius: 4px;
+            cursor: pointer;
+            &:after {
+                content: '';
+                box-shadow: 0px 10px 15px 5px rgba(89, 199, 173, 0.5);
+                width: 118px;
+                height: 33px;
+                position: absolute;
+                bottom: 0;
+            }
+            &.big {
+                width: 118px;
+                height: 56px;
+                background-image: url("../../assets/images/bg-images/middle-container/big.png"); // image-set( url("../../assets/images/bg-images/middle-container/bigbutton.png") 1x, url("../../assets/images/bg-images/middle-container/bigbutton@2x.png") 2x, url("../../assets/images/bg-images/middle-container/bigbutton@3x.png") 3x);
+                background-repeat: no-repeat;
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+            &.small {
+                width: 118px;
+                height: 56px;
+                background-image: url("../../assets/images/bg-images/middle-container/small.png"); // image-set( url("../../assets/images/bg-images/middle-container/smallbutton.png") 1x, url("../../assets/images/bg-images/middle-container/smallbutton@2x.png") 2x, url("../../assets/images/bg-images/middle-container/smallbutton@3x.png") 3x);
+                background-repeat: no-repeat;
+            }
+            &.take {
+                width: 118px;
+                height: 56px;
+                margin-right: 10px;
+                margin-left: 5px;
+                background-image: url("../../assets/images/bg-images/middle-container/take.png"); // image-set( url("../../assets/images/bg-images/middle-container/takebutton.png") 1x, url("../../assets/images/bg-images/middle-container/takebutton@2x.png") 2x, url("../../assets/images/bg-images/middle-container/takebutton@3x.png") 3x);
+                background-repeat: no-repeat;
+            }
+            &.start {
+                width: 118px;
+                height: 56px;
+                background-image: url("../../assets/images/bg-images/middle-container/start.png"); // image-set( url("../../assets/images/bg-images/middle-container/startbutton.png") 1x, url("../../assets/images/bg-images/middle-container/startbutton@2x.png") 2x, url("../../assets/images/bg-images/middle-container/startbutton@3x.png") 3x);
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .diamond-container {
+        width: 297px;
+        height: 102px;
+        background-image: image-set( url("../../assets/images/bg-images/middle-container/diamondsymbols.png") 1x, url("../../assets/images/bg-images/middle-container/diamondsymbols@2x.png") 2x, url("../../assets/images/bg-images/middle-container/diamondsymbols@3X.png") 3x);
+    }
+}

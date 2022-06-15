@@ -1,0 +1,24 @@
+.app-hint {
+    .hint-container {
+        position: fixed;
+        bottom: 25px;
+        right: 50px;
+        width: 334px;
+        height: 29px;
+        background-image: image-set( url("../../assets/images/bg-images/middle-container/hintbox.png") 1x, url("../../assets/images/bg-images/middle-container/hintbox@2x.png") 2x, url("../../assets/images/bg-images/middle-container/hintbox@3x.png") 3x);
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 2px 5px;
+        .hint-text {
+            font-family: Gotham;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #FFF;
+        }
+    }
+}

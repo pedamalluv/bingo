@@ -1,0 +1,8 @@
+<div class="app-ticket">
+    <div class="ticket-container">
+        <div class="ticket-block" *ngFor="let set of numberSet; let i = index">
+            <span class="ticket-no">{{i+1}}</span>
+            <div class="number-block" *ngFor="let no of set.set">{{no}}</div>
+        </div>
+    </div>
+</div>

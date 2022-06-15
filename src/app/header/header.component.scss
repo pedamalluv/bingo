@@ -1,0 +1,132 @@
+.app-header {
+    height: 103px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: image-set(url("../../assets/images/bg-images/header/header-bg-red.png") 1x, url("../../assets/images/bg-images/header/header-bg-red@2x.png") 2x, url("../../assets/images/bg-images/header/header-bg-red@3x.png") 3x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    z-index: 9;
+    .header-content {
+        &-left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: calc((100% - 265px) / 2);
+            background-image: image-set( url("../../assets/images/bg-images/header/pattern-left.png") 1x, url("../../assets/images/bg-images/header/pattern-left@2x.png") 2x, url("../../assets/images/bg-images/header/pattern-left@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: calc(100% + 26px) 75px;
+            background-position: top 36px left -24px;
+            padding-top: 5px;
+            .content {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 266px;
+                height: 44px;
+                .label {
+                    width: 107px;
+                    height: 39px;
+                    background-image: image-set( url("../../assets/images/bg-images/header/scores-svg.png") 1x, url("../../assets/images/bg-images/header/scores-svg@2x.png") 2x, url("../../assets/images/bg-images/header/scores-svg@3x.png") 3x);
+                    background-repeat: no-repeat;
+                }
+                .value {
+                    width: 153px;
+                    height: 44px;
+                    align-items: flex-start;
+                    justify-content: center;
+                    background-image: image-set( url("../../assets/images/bg-images/header/winnnerbox.png") 1x, url("../../assets/images/bg-images/header/winnnerbox@2x.png") 2x, url("../../assets/images/bg-images/header/winnnerbox@3x.png") 3x);
+                    background-repeat: no-repeat;
+                    font-family: Gotham;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #FFF;
+                    padding: 14px 20px 0 20px;
+                }
+            }
+        }
+        &-center {
+            width: 265px;
+            height: 103px;
+            display: flex;
+            background-image: image-set( url("../../assets/images/logo/bingologo.png") 1x, url("../../assets/images/logo/bingologo@2x.png") 2x, url("../../assets/images/logo/bingologo@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: 265px 96px;
+            background-position: 50% 9px;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                background-image: image-set( url("../../assets/images/bg-images/header/logocrown.png") 1x, url("../../assets/images/bg-images/header/logocrown@2x.png") 2x, url("../../assets/images/bg-images/header/logocrown@3x.png") 3x);
+                background-repeat: no-repeat;
+                height: 31px;
+                width: 68px;
+                top: 2px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+        }
+        &-right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: calc((100% - 265px) / 2);
+            background-image: image-set( url("../../assets/images/bg-images/header/pattern-right.png") 1x, url("../../assets/images/bg-images/header/pattern-right@2x.png") 2x, url("../../assets/images/bg-images/header/pattern-right@3x.png") 3x);
+            background-repeat: no-repeat;
+            background-size: calc(100% + 26px) 75px;
+            background-position: top 36px right -24px;
+            padding: 5px;
+            .content {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 304px;
+                height: 44px;
+                .label {
+                    width: 145px;
+                    height: 39px;
+                    background-image: image-set( url("../../assets/images/bg-images/header/winner.png") 1x, url("../../assets/images/bg-images/header/winner@2x.png") 2x, url("../../assets/images/bg-images/header/winner@3x.png") 3x);
+                    background-repeat: no-repeat;
+                }
+                .value {
+                    width: 153px;
+                    height: 44px;
+                    align-items: flex-start;
+                    justify-content: center;
+                    background-image: image-set( url("../../assets/images/bg-images/header/winnnerbox.png") 1x, url("../../assets/images/bg-images/header/winnnerbox@2x.png") 2x, url("../../assets/images/bg-images/header/winnnerbox@3x.png") 3x);
+                    background-repeat: no-repeat;
+                    font-family: Gotham;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #FFF;
+                    padding: 14px 20px 0 20px;
+                }
+            }
+        }
+    }
+    .exit-icon {
+        display: inline-flex;
+        position: fixed;
+        top: -6px;
+        right: 6px;
+        width: 60px;
+        height: 60px;
+        background-image: image-set( url('../../assets/images/bg-images/header/exitrollover.png') 1x, url('../../assets/images/bg-images/header/exitrollover@2x.png') 2x, url('../../assets/images/bg-images/header/exitrollover@3x.png') 3x);
+        background-repeat: no-repeat;
+        text-indent: -99999px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url("./_normalize.scss"); // Normalize SCSS
+@import url("./_reset.scss"); //reset SCSS
+@import url("../../node_modules/bootstrap/dist/css/bootstrap.css"); // importing bootstrap min css
+// background: rgb(106,0,16);
+// background: linear-gradient(180deg, rgba(106,0,16,1) 0%, rgba(255,0,63,1) 99%);
+.row {
+    width: 100%;
+}

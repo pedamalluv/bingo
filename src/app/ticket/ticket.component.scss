@@ -1,0 +1,92 @@
+$ticket-block-width: 244px;
+$ticket-block-height: 206px;
+$number-block: #000;
+.app-ticket {
+    .ticket-container {
+        width: calc((3 * #{$ticket-block-width}) + 60px);
+        .ticket-block {
+            display: inline-flex;
+            margin-right: 30px;
+            width: $ticket-block-width;
+            height: $ticket-block-height;
+            padding: 40px 60px 18px 28px;
+            background-image: url("../../assets/images/bg-images/middle-container/ticket-slot.png");
+            background-repeat: no-repeat;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            .ticket-no {
+                position: absolute;
+                top: 1px;
+                left: 19px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 26px;
+                height: 26px;
+                font-family: Gotham;
+                font-size: 20px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #fff;
+            }
+            .number-block {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 28.5px;
+                height: 27px;
+                margin: 1px;
+                // margin: 193px 88px 12px 1px;
+                font-family: Gotham;
+                font-size: 21px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $number-block;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &:nth-child(n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #ab37d6, #fff, #b973d3);
+                }
+            }
+            &:nth-child(2n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #d65537, #fff, #d8654a);
+                }
+            }
+            &:nth-child(3n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #3752d6, #fff, #6477d0);
+                }
+            }
+            &:nth-child(4n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #46d637, #fff, #4fd840);
+                }
+            }
+            &:nth-child(5n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #d637a7, #fff, #d44dac);
+                }
+            }
+            &:nth-child(6n) {
+                .number-block {
+                    background-image: linear-gradient(to top, #37d6c5, #fff, #37d6c5);
+                }
+            }
+        }
+    }
+}
